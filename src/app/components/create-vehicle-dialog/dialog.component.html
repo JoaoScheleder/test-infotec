@@ -1,0 +1,35 @@
+<div class="dialog-backdrop">
+    <div class="dialog-container">
+        <h2 class="font-bold text-lg mb-4">{{ title }}</h2>
+        <form class="flex flex-col" [formGroup]="createVehicleForm">
+            <label>
+                Placa
+                <input type="text" placeholder="Placa"  formControlName="placa">
+            </label>
+            <label>
+                Renavam
+                <input type="text" placeholder="Renavam" formControlName="renavam">
+            </label>
+            <label>
+                Chassi
+                <input type="text" placeholder="Chassi" formControlName="chassi">
+            </label>
+            <label>
+                Modelo
+                <input type="text" placeholder="Modelo" formControlName="modelo">
+            </label>
+            <label>
+                Marca
+                <input type="text" placeholder="Marca" formControlName="marca">
+            </label>
+            <label>
+                Ano
+                <input type="text" placeholder="Ano" formControlName="ano">
+            </label>
+        </form>
+        <div class="flex gap-2 mt-2">
+            <button class="text-white bg-blue-700 py-2 px-4 rounded" (click)="submit()">Cadastrar</button>
+            <button class="text-white bg-gray-700 py-2 px-4 rounded" (click)="close()">Fechar</button>
+        </div>
+    </div>
+</div>
